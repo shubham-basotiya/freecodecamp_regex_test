@@ -66,8 +66,13 @@
 // console.log(numbers.match(shortHand));
 // console.log(sentence.match(shortHand));
 
+// let movieName = "2001: A Space Odyssey";
+// let numRegex = /\d/g; // Change this line
+// let result = movieName.match(numRegex).length;
+
 let movieName = "2001: A Space Odyssey";
-let numRegex = /\d/g; // Change this line
-let result = movieName.match(numRegex).length;
+let noNumRegex = /\D/g; // Change this line
+let result = movieName.match(noNumRegex).length;
+
 
 console.log(result);
