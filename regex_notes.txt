@@ -9,8 +9,13 @@ test() or match() opposite each other.
 * -> matches characters that occur zero or more times.
 [] -> look for group of characters.
 - -> range a-z OR 0-9.
-^ -> 
+^ -> exclude/not match
 For example, /[^aeiou]/gi matches all characters that are not a vowel. Note that characters like ., !, [, @, / 
 and white space are matched - the negated vowel character set only excludes the vowel characters.
+
+In an earlier challenge, you used the caret character (^) inside a character set to create a negated character 
+set in the form [^thingsThatWillNotBeMatched]. 
+Outside of a character set, the caret is used to search for patterns at the beginning of strings.
+
 i -> ignore case (uppercase/lowercase).
 g -> global one or more then one
