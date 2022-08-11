@@ -60,8 +60,14 @@
 
 // console.log(result);
 
-let shortHand = /\W/;
-let numbers = "42%";
-let sentence = "Coding!";
-console.log(numbers.match(shortHand));
-console.log(sentence.match(shortHand));
+// let shortHand = /\W/;
+// let numbers = "42%";
+// let sentence = "Coding!";
+// console.log(numbers.match(shortHand));
+// console.log(sentence.match(shortHand));
+
+let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/g; // Change this line
+let result = movieName.match(numRegex).length;
+
+console.log(result);
