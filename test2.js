@@ -33,8 +33,35 @@
 // let result = text.match(myRegex);
 // console.log(result);
 
-let firstString = "Ricky is first and can be found.";
-let firstRegex = /^Ricky/;
-console.log(firstRegex.test(firstString));
-let notFirst = "You can't find Ricky now.";
-console.log(firstRegex.test(notFirst));
+// let firstString = "Ricky is first and can be found.";
+// let firstRegex = /^Ricky/;
+// console.log(firstRegex.test(firstString));
+// let notFirst = "You can't find Ricky now.";
+// console.log(firstRegex.test(notFirst));
+
+// let theEnding = "This is a never ending story";
+// let storyRegex = /story$/;
+// console.log(storyRegex.test(theEnding));
+// let noEnding = "Sometimes a story will have to end";
+// console.log(storyRegex.test(noEnding));
+
+// let longHand = /[A-Za-z0-9_]+/;
+// let shortHand = /\w+/;
+// let numbers = "42";
+// let varNames = "important_var";
+// console.log(longHand.test(numbers));
+// console.log(shortHand.test(numbers));
+// console.log(longHand.test(varNames));
+// console.log(shortHand.test(varNames));
+
+// let quoteSample = "Pack my box with five dozen liquor jugs.";//"The five boxing wizards jump quickly.";
+// let alphabetRegexV2 = /\w/g; // Change this line
+// let result = quoteSample.match(alphabetRegexV2).length;
+
+// console.log(result);
+
+let shortHand = /\W/;
+let numbers = "42%";
+let sentence = "Coding!";
+console.log(numbers.match(shortHand));
+console.log(sentence.match(shortHand));
