@@ -9,7 +9,12 @@
 // let atr_res = atr_st.match(atr_regex);
 // console.log(atr_res);
 
-let atr_str = "This is not bot sot cot problem";
-let atr_regex = /[bnsc]ot/;//square bracket
+// let atr_str = "This is not bot sot cot problem";
+// let atr_regex = /[bnsc]ot/;//square bracket
+// let res = atr_str.match(atr_regex);
+// console.log(res);
+
+let atr_str = "This is another example of regex 01.";
+let atr_regex = /[a-z0-9]/ig;
 let res = atr_str.match(atr_regex);
 console.log(res);
