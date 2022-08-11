@@ -15,8 +15,19 @@ and white space are matched - the negated vowel character set only excludes the 
 
 In an earlier challenge, you used the caret character (^) inside a character set to create a negated character 
 set in the form [^thingsThatWillNotBeMatched]. 
-Outside of a character set, the caret is used to search for patterns at the beginning of strings.
+Note :-  Outside of a character set, the caret is used to search for patterns at the beginning of strings.
 
 i -> ignore case (uppercase/lowercase).
 g -> global one or more then one
 ? -> lezy regular expression
+$ -> You can search the end of strings using the dollar sign character $ at the end of the regex.
+
+Example -
+
+    let theEnding = "This is a never ending story";
+    let storyRegex = /story$/;
+    storyRegex.test(theEnding);
+    let noEnding = "Sometimes a story will have to end";
+    storyRegex.test(noEnding);
+    
+Result -   The first test call would return true, while the second would return false.
