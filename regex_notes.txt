@@ -19,3 +19,4 @@ Outside of a character set, the caret is used to search for patterns at the begi
 
 i -> ignore case (uppercase/lowercase).
 g -> global one or more then one
+? -> lezy regular expression
