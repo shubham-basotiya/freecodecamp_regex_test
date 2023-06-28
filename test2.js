@@ -76,3 +76,46 @@ let result = movieName.match(noNumRegex).length;
 
 
 console.log(result);
+
+
+
+function mutation(arr) {
+    
+    // var rslt = false;
+    var counter = 0;
+    let first_len = arr[0].length;
+    let second_len = arr[1].length;
+    
+    console.log("first index length : " + first_len + " second index length : " + second_len);
+    
+    if(first_len >= second_len){
+        for(let i = 0; i < second_len; i++){
+            for(let k = 0; k < first_len; k++){
+                if(arr[i] == arr[k]){
+                    counter++;
+                }
+            }
+        }
+        if(counter == second_len){
+            return true;
+        } else{
+            return false;
+        }
+    } else {
+        for(let j = 0; j < first_len; j++){
+            for(let l = 0; l < second_len; l++){
+                if(arr[j] == arr[l]){
+                    counter++;
+                } 
+            }
+        }
+        if(counter == first_len){
+            return true;
+        } else{
+            return false;
+        }
+    }
+}
+
+// console.log(mutation(["hello", "hey"]));
+console.log(mutation(["hello", "Hello"]));
